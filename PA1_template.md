@@ -82,7 +82,7 @@ total
 ## 53 2012-11-29  7047
 ```
 
-####Create a histogram for total steps per day (total)
+####Create a histogram for total steps per day
 
 ```r
 library(lattice)
@@ -91,7 +91,7 @@ histogram(~ steps, total, type = "count")
 
 ![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
-####Calculate and report the mean/median of total steps per day (total)
+####Calculate and report the mean/median of total steps per day
 
 ```r
 mean(total$steps, na.rm = TRUE)
@@ -118,7 +118,7 @@ ___
 
 ```r
 totalinterval <- aggregate(steps ~ interval,activity,mean)
-xyplot(steps ~ interval, totalinterval, type = "l")
+xyplot(steps ~ interval, totalinterval, type = "l",color = "black")
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
