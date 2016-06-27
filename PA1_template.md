@@ -5,7 +5,7 @@ ___
 
 Before running analysis, ensure that your working directory is set to /RepData_PeerAssessment1 
 
-Read in zipped csv file *activity.csv* into R
+Read in zipped csv file *activity.csv* into R 
 
 
 ```r
