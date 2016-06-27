@@ -48,7 +48,7 @@ ___
 
 ```{r}
 totalinterval <- aggregate(steps ~ interval,activity,mean)
-xyplot(steps ~ interval, totalinterval, type = "l",color = "black")
+xyplot(steps ~ interval, totalinterval, type = "l", ylab = "Number of Steps")
 ```
 
 ####Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?

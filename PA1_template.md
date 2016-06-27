@@ -118,7 +118,7 @@ ___
 
 ```r
 totalinterval <- aggregate(steps ~ interval,activity,mean)
-xyplot(steps ~ interval, totalinterval, type = "l",color = "black")
+xyplot(steps ~ interval, totalinterval, type = "l", ylab = "Number of Steps")
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
